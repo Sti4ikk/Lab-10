@@ -57,6 +57,7 @@ void menu(std::array<funcPtr, 4> &functions)
 			<< "4. Второе делить на первое.\n"
 			<< "5. Выход.\n\n";
 		std::cout << "Введите номер функции, которую хотите использовать: ";
+
 		std::cin >> choise;
 		if (choise == 5)
 			return ;

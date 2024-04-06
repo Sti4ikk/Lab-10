@@ -31,7 +31,8 @@ void menu()
 	{
 		std::cout
 			<< "1. Кол-во символов.\n"
-			<< "2. Начальная и конечная позиция.\n\n"
+			<< "2. Начальная и конечная позиция.\n"
+			<< "3. Выход.\n\n"
 			<< "Выберите режим: ";
 
 		std::cin >> choise;
@@ -41,10 +42,11 @@ void menu()
 		{
 		case(1): functions.at(0)(); break;
 		case(2):functions.at(1)(); break;
-		default: std::cout << "Выберите цифру из списка!"; break;
+		case(3): return;
+		default: std::cout << "Выберите цифру из списка! \n";
 		}
 
-	} while (choise != 1 or choise != 2);
+	} while (true);
 }
 
 void numOfSymbols()
